@@ -1,0 +1,161 @@
+{
+  "name": "@cityofzion/neon-dappkit",
+  "entries": [
+    {
+      "version": "0.4.1",
+      "tag": "@cityofzion/neon-dappkit_v0.4.1",
+      "date": "Mon, 18 Mar 2024 18:09:02 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update invokeFunction and signTransaction to add smart contract witnesses when the signer is not an account used on the construtor"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.4.0",
+      "tag": "@cityofzion/neon-dappkit_v0.4.0",
+      "date": "Fri, 02 Feb 2024 20:16:03 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Update InitOptions to support validBlocks param"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.2",
+      "tag": "@cityofzion/neon-dappkit_v0.3.2",
+      "date": "Mon, 27 Nov 2023 18:34:53 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Changes were made to methods that take Buffer as a parameter to ensure that the parameter is in fact Buffer"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.1",
+      "tag": "@cityofzion/neon-dappkit_v0.3.1",
+      "date": "Mon, 30 Oct 2023 11:49:17 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "The \"browser\" field was added to the package.json so that when the library is being run in the browser, certain polyfills are applied."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.3.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.0",
+      "tag": "@cityofzion/neon-dappkit_v0.3.0",
+      "date": "Mon, 02 Oct 2023 18:41:15 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Now the calculateFee function returns a string in the networkFee and systemFee properties."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.3.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.2.0",
+      "tag": "@cityofzion/neon-dappkit_v0.2.0",
+      "date": "Thu, 28 Sep 2023 13:15:04 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Enable multi-signing with various wallets. Use \"signTransaction\" for signing without invoking. Share the response with another user, who can then call \"invokeFunction\" later."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.2.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.0",
+      "tag": "@cityofzion/neon-dappkit_v0.1.0",
+      "date": "Wed, 27 Sep 2023 16:59:04 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Shorten hexstring methods names to use 'hex' instead of 'hexstring'"
+          },
+          {
+            "comment": "Remove typeChecker.ts file; import new TypeChecker from neon-dappkit-types"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.1.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.8",
+      "tag": "@cityofzion/neon-dappkit_v0.0.8",
+      "date": "Thu, 14 Sep 2023 20:35:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add \"Struct\" type support on NeonParser"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.0.7`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.7",
+      "tag": "@cityofzion/neon-dappkit_v0.0.7",
+      "date": "Tue, 12 Sep 2023 17:08:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added state validation in testInvoke function to catch execution error "
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.6",
+      "tag": "@cityofzion/neon-dappkit_v0.0.6",
+      "date": "Mon, 11 Sep 2023 14:54:03 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Adapt the implementation to the new signature of neon-dappkit-types to return Promises on encrypt, descrypt and decryptFromArray methods"
+          },
+          {
+            "comment": "Fix neon-core imports to use only for types"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@cityofzion/neon-dappkit-types\" to `0.0.6`"
+          }
+        ]
+      }
+    }
+  ]
+}

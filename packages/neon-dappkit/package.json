@@ -1,0 +1,63 @@
+{
+  "name": "@cityofzion/neon-dappkit",
+  "version": "0.4.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "format": "eslint --fix",
+    "test": "ts-node test/setup-neo-go.ts && ts-mocha --reporter json > ../../mocha-results.json src/**/*.spec.ts",
+    "test-print": "ts-mocha src/**/*.spec.ts",
+    "coverage": "nyc pnpm test"
+  },
+  "dependencies": {
+    "@cityofzion/neon-dappkit-types": "workspace:*",
+    "@cityofzion/neon-js": "5.5.1",
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "randombytes": "^2.1.0",
+    "readable-stream": "^4.4.2",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "crypto-browserify": "^3.12.0"
+  },
+  "devDependencies": {
+    "@cityofzion/neon-core": "5.5.1",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/elliptic": "6.4.14",
+    "@types/expect": "^24.3.0",
+    "@types/follow-redirects": "^1.14.4",
+    "@types/mocha": "10.0.0",
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "adm-zip": "^0.5.10",
+    "chai": "~4.3.7",
+    "eslint": "^8.48.0",
+    "follow-redirects": "^1.14.4",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CityOfZion/neon-dappkit.git",
+    "directory": "packages/neon-dappkit"
+  },
+  "browser": {
+    "stream": "stream-browserify",
+    "crypto": "crypto-browserify",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough"
+  }
+}
